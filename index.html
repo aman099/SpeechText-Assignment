@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Poppins Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>SpeechText Clone</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-container center">
+        <div class="left flex-align">
+          <div class="logo-img">
+            <img src="./assets/SpeechGen5.png" alt="" />
+          </div>
+          <span>speechgen.io</span>
+        </div>
+        <div class="right">
+          <ul class="flex-align">
+            <a href=""><li>TTS</li></a>
+            <a href=""><li>FAQ</li></a>
+            <a href=""><li>Pricing</li></a>
+            <a href=""
+              ><li class="eng flex-align">
+                <img width="20px" src="./assets/eng_flag.png" alt="" />EN
+              </li></a
+            >
+            <a class="login-menu" href=""
+              ><li class="flex-align">
+                Log in<span class="L-sign grid-center"><strong>L</strong></span
+                ><span>1&nbsp;500</span>
+              </li></a
+            >
+          </ul>
+          <div class="hamburger-menu">
+            <div class="hamburger-menu-icon">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+              <i class="fa-solid fa-xmark fa-2xl"></i>
+              Menu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-menus">
+        <ul>
+          <li class="first-hidden-menu">Log in <span></span> 1&nbsp;500 </li>
+          <li><span></span>EN</li>
+          <li>Pricing</li>
+          <li>FAQ</li>
+          <li>TTS</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="hero">
+      <div class="hero-container center">
+        <div class="heading-container">
+          <h3>Realistic Text-to-Speech AI Converter</h3>
+        </div>
+        <div class="right-left-hero flex-align">
+          <div class="left-hero">
+            <div class="selection-container">
+              <div class="selector-btn">
+                <button class="language-selector flex-align">
+                  <span class="logo-contain">
+                    <img
+                      width="10px"
+                      height="10px"
+                      src="./assets/united-states-flag-icon.png"
+                      alt=""
+                    />
+                    English (US)
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                </button>
+                <div class="selector-btn-popup hide">
+                    <div class="input-container">
+                        <input type="text">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="languages-selectors">
+                        <ul>
+                            <li class="default-language"><span class="flag"><img src="./assets/united-states-flag-icon.png" alt=""></span>English (US)</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags/GB.webp" alt=""></span>English (GB)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Australia.png" alt=""></span>English (Australia)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Canada.png" alt=""></span>English (Canada)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Hong Kong.png" alt=""></span>English (Hong Kong)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>English (India)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Philipinnes.png" alt=""></span>English (Phillipines)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Ethiopia.png" alt=""></span>Amharic (Ethiopia)</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/" alt=""></span>Arab</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Arabic (Algeria)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Egypt.png" alt=""></span>Arabic (Egypt)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Saudi_Arabia.png" alt=""></span>Arabic (Saudi Arabia)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/" alt=""></span>Arabic (UAE)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Bulgaria.png" alt=""></span>Bulgarian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Bengali (India)</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Catalan.png" alt=""></span>Catalan (Spain)</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/China.png" alt=""></span>Chinese</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Hong Kong.png" alt=""></span>Chinese (Hong Kong)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Chinese (Jilu)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Chinese (Southwestern)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Chinese (Taiwanese)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Chinese (Wu, Simplified)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Czech.png" alt=""></span>Czech</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Danish (Denmark).png" alt=""></span>Danish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/German.png" alt=""></span>German</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Austria.png" alt=""></span>German (Austria)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Spanish (Mexico).png" alt=""></span>Spanish</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Argentina.png" alt=""></span>Spanish (Argentina)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Spanish (Colombia)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags/Spanish (Mexico).png" alt=""></span>Spanish (Mexico)</li>
+                                <li><span class="flag"><img src="./assets/united-states-flag-icon.png" alt=""></span>Spanish (United States)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Estonia.png" alt=""></span>Estonia</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Basque.png" alt=""></span>Basque</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Persian.png" alt=""></span>Persian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Finnish.png" alt=""></span>Finnish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/France.png" alt=""></span>French</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>French (Belgium)</li>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>French (Switzerland)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Iceland.png" alt=""></span>Irish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Galician</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Greek.png" alt=""></span>Greek</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Gujarati</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Indonesia.png" alt=""></span>Indonesian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/" alt=""></span>Hebrew</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Iceland.png" alt=""></span>Icelandic</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Italian.png" alt=""></span>Italian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Japanese</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Javanese</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Kannada</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Korean</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Latvian.png" alt=""></span>Latvian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Marathi</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Malay</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Dutch (NL).png" alt=""></span>Dutch NL</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Dutch (Belgium)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Norway.png" alt=""></span>Norwegian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Punjabi</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Philipinnes.png" alt=""></span>Philippine</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Polish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Portuguese</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Portuguese (Brazil)</li>
+                            </div>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Romania.png" alt=""></span>Romanian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Russian.png" alt=""></span>Russian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/Sweden.png" alt=""></span>Swedish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Tamil (India)</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Telugu (India)</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Thai</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Turkish</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Ukrainian</li>
+                            <li><span class="flag"><img src="./assets/Country_Flags/India.png" alt=""></span>Urdu (India)</li>
+                            <div>
+                                <li><span class="flag"><img src="./assets/Country_Flags" alt=""></span>Urdu (Pakistan)</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="all-languages">
+                        <span id="plus"><i class="fa-solid fa-plus"></i></span> All languages: <strong>+76</strong>
+                    </div>
+                </div>
+              </div>
+              <div class="ai-angel-btn">
+                <button class="ai-selector flex-align">
+                  <span class="logo-contain flex-align">
+                    <div class="user-img flex-align">
+                      <i class="fa-solid fa-user"></i>
+                      <span class="pro"><strong>pro</strong></span>
+                    </div>
+                    &nbsp;&nbsp;Angel
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                </button>
+                <div class="angel-btn-popup hide">
+                  <div class="input-container">
+                    <input type="text">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="grid-angel">
+                  <ul>
+                    <li class="first-child-angel"><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Angel</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Arnold</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Bart</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Brandon</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Christopher</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Davis</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Den</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Elijah</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Eric</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Gregory Plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Guy</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jack</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jacob</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jason</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Joey Plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>John</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Justin plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kevin plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kolby</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Matthew plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Oliver</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Roger</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Scott</li>
+                  </ul>
+                  <ul>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Steffan</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Tony</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Amber</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Amelia</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Anny</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Ashley</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Avery</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Blue</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Cora</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Danielle Plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Elizabeth</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Ellis</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Evelyn</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Fenny</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Hanna</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Holly</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Hunnter</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Ivy Plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jane Smith</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jennifer</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jenny</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Joanna plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kelsy</li>
+                  </ul>
+                  <ul>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kendra plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kimberly plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Michelle</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Monica</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Nancy</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Ruth plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Sailli plus</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Sara</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Skyler</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Iron</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Jerry</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Joey</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Justin</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Matthew</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Glory</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Helen</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Ivy</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Joanna</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kendra</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kimberly</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Salli</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Megan</li>
+                    <li><span><i class="fa-solid fa-user"></i><strong>PRO</strong></span>Kathy</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+              <div class="pitch-btn">
+                <button class="pitch-selector flex-align">
+                  <span class="text-contain"> pitch </span>
+                  <span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                </button>
+                <div class="pitch-btn-popup hide">
+                  <ul>
+                    <li>-20</li>
+                    <li>-18</li>
+                    <li>-16</li>
+                    <li>-14</li>
+                    <li>-12</li>
+                    <li>-10</li>
+                    <li>-8</li>
+                    <li>-6</li>
+                    <li>-4</li>
+                    <li>-2</li>
+                    <li class="pitch-default">pitch</li>
+                    <li>+2</li>
+                    <li>+4</li>
+                    <li>+6</li>
+                    <li>+8</li>
+                    <li>+10</li>
+                    <li>+12</li>
+                    <li>+14</li>
+                    <li>+16</li>
+                    <li>+18</li>
+                    <li>+20</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="speed-btn">
+                <button class="speed-selector flex-align">
+                  <span class="text-contain"> speed </span>
+                  <span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                </button>
+                <div class="pitch-btn-popup speed-btn-popup hide">
+                  <ul>
+                    <li>x0.1</li>
+                    <li>x0.2</li>
+                    <li>x0.3</li>
+                    <li>x0.4</li>
+                    <li>x0.5</li>
+                    <li>x0.6</li>
+                    <li>x0.7</li>
+                    <li>x0.8</li>
+                    <li>x0.9</li>
+                    <li class="pitch-default speed-default">speed</li>
+                    <li>x1.1</li>
+                    <li>x1.2</li>
+                    <li>x1.3</li>
+                    <li>x1.4</li>
+                    <li>x1.5</li>
+                    <li>x1.6</li>
+                    <li>x1.7</li>
+                    <li>x1.8</li>
+                    <li>x1.9</li>
+                    <li>x2.0</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="textarea-container">
+                <div class="textarea-menus">
+                    <div><span class="folder"><i class="fa-regular fa-folder-open"></i></span></div>
+                    <div><span class="pause"><i class="fa-regular fa-circle-pause"></i></span></div>
+                    <div><span class="clear"><i class="fa-solid fa-broom"></i></span></div>
+                    <div><span class="step-back"><i class="fa-solid fa-backward-step"></i></span></div>
+                    <div><span class="step-forward"><i class="fa-solid fa-forward-step"></i></span></div>
+                    <div><span class="step-forward">SSML</span></div>
+                    <div><span class="speak"><i class="fa-solid fa-microphone"></i></span></div>
+                    <div><span class="cut"><i class="fa-solid fa-scissors"></i></span></div>
+                </div>
+                <textarea spellcheck="false" maxlength="2000000" placeholder="" name="" id="status" cols="30" rows="10">
+                    Turn your text into speech using cutting-edge AI voices with an American English accent. Use it for work, videos, business, ads, social media, entertainment, and so much more. Just type or paste your text, generate the voice-over, and download the audio file.
+                </textarea>
+                <div class="valueLengthCapture"></div>
+            </div>
+            <div class="preferences-container flex-align">
+              <div class="format-btn">
+                <select class="format">
+                  <option value="mp3">mp3</option>
+                  <option value="wav">wav</option>
+                  <option value="ogg">ogg</option>
+                </select>
+              </div>
+              <div class="pause-para-btn">
+                <select class="format">
+                  <option value="Puase for paragraphs">
+                    Pause for paragraphs
+                  </option>
+                  <option value="150 ms">150 ms</option>
+                  <option value="200 ms">200 ms</option>
+                  <option value="250 ms">250 ms</option>
+                  <option value="300 ms">300 ms</option>
+                  <option value="350 ms">350 ms</option>
+                  <option value="450 ms">450 ms</option>
+                  <option value="400 ms">400 ms</option>
+                  <option value="500 ms">500 ms</option>
+                  <option value="600 ms">600 ms</option>
+                  <option value="700 ms">700 ms</option>
+                  <option value="800 ms">800 ms</option>
+                  <option value="900 ms">900 ms</option>
+                  <option value="1000 ms">1000 ms</option>
+                  <option value="1.3 sec">1.3 sec</option>
+                  <option value="1.5 sec">1.5 sec</option>
+                  <option value="2 sec">2 sec</option>
+                  <option value="3 sec">3 sec</option>
+                  <option value="4 sec">4 sec</option>
+                  <option value="5 sec">5 sec</option>
+                </select>
+              </div>
+              <div class="pause-sentence-btn">
+                <select class="format">
+                  <option value="Pause for sentences">
+                    Pause for sentences
+                  </option>
+                  <option value="150 ms">150 ms</option>
+                  <option value="200 ms">200 ms</option>
+                  <option value="250 ms">250 ms</option>
+                  <option value="300 ms">300 ms</option>
+                  <option value="350 ms">350 ms</option>
+                  <option value="450 ms">450 ms</option>
+                  <option value="400 ms">400 ms</option>
+                  <option value="500 ms">500 ms</option>
+                  <option value="600 ms">600 ms</option>
+                  <option value="700 ms">700 ms</option>
+                  <option value="800 ms">800 ms</option>
+                  <option value="900 ms">900 ms</option>
+                  <option value="1000 ms">1000 ms</option>
+                  <option value="1.3 sec">1.3 sec</option>
+                  <option value="1.5 sec">1.5 sec</option>
+                  <option value="2 sec">2 sec</option>
+                  <option value="3 sec">3 sec</option>
+                  <option value="4 sec">4 sec</option>
+                  <option value="5 sec">5 sec</option>
+                </select>
+              </div>
+              <div class="bitrate-btn">
+                <select class="format">
+                  <option value="Bitrate">Bitrate</option>
+                  <option value="192000 Hz">192000 Hz</option>
+                  <option value="176400 Hz">176400 Hz</option>
+                  <option value="96000 Hz">96000 Hz</option>
+                  <option value="88200 Hz">88200 Hz</option>
+                  <option value="64000 Hz">64000 Hz</option>
+                  <option value="48000 Hz">48000 Hz</option>
+                  <option value="44100 Hz">44100 Hz</option>
+                  <option value="32000 Hz">32000 Hz</option>
+                  <option value="22050 Hz">22050 Hz</option>
+                  <option value="16000 Hz">16000 Hz</option>
+                  <option value="11025 Hz">11025 Hz</option>
+                  <option value="8000 Hz">8000 Hz</option>
+                </select>
+              </div>
+            </div>
+            <div class="generate-speech-btn">
+              <button class="generate-speech">Generate Speech</button>
+            </div>
+          </div>
+          <div class="right-hero">
+            <p class="balance">Balance</p>
+            <p class="limits">
+              <span class="L-sign"><strong>L</strong></span>
+              &nbsp;1 500 Limits
+              <span class="question-mark"
+                ><i class="fa-solid fa-question"></i
+              ></span>
+            </p>
+            <button class="get-more-limits">Get more limits</button>
+            <div class="characters">
+              <span><i class="fa-solid fa-user"></i></span>
+              <div class="chars">
+                3 000 characters
+                <span class="question-mark"
+                  ><i class="fa-solid fa-question"></i
+                ></span>
+              </div>
+            </div>
+            <div class="characters charaters-pro">
+              <span class="user-pro"
+                ><i class="fa-solid fa-user"></i
+                ><span class="pro-chars"><strong>pro</strong></span></span
+              >
+              <div class="chars">
+                5 000 characters
+                <span class="question-mark"
+                  ><i class="fa-solid fa-question"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="ai-description">
+          Create realistic Voiceovers online! Insert any text to generate speech
+          and download audio mp3 or wav for any purpose. Speak a text with
+          AI-powered voices.You can convert text to voice for free for reference
+          only. For all features, <a href="">purchase the paid plans</a>
+        </p>
+        <h5 class="example-heading">AI Voice Examples</h5>
+        <div class="ai-voice-example-btns flex-align">
+          <button class="example angel">
+            <span><i class="fa-solid fa-user"></i></span>Angel
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example matthew">
+            <span><i class="fa-solid fa-user"></i></span>Matthew
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example matthew-plus">
+            <span><i class="fa-solid fa-user"></i></span>Matthew plus
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example davis">
+            <span><i class="fa-solid fa-user"></i></span>Davis
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example arnold">
+            <span><i class="fa-solid fa-user"></i></span>Arnold
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example avery">
+            <span><i class="fa-solid fa-user"></i></span>Avery
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example iron">
+            <span><i class="fa-solid fa-user"></i></span>Iron
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example christopher">
+            <span><i class="fa-solid fa-user"></i></span>Christopher
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example joey">
+            <span><i class="fa-solid fa-user"></i></span>Joey
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+          <button class="example steffan">
+            <span><i class="fa-solid fa-user"></i></span>Steffan
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+        </div>
+        <div class="full-voices-cont">
+          <a href="" class="full-voices">Full voices list</a>
+        </div>
+      </div>
+    </main>
+
+    <section id="steps">
+      <div class="steps-container center">
+        <div class="heading-cont">
+          <h2>How to convert text into speech?</h2>
+        </div>
+        <div class="step-cont">
+          <div class="step">
+            <span>1</span>
+            <p>Just type some text or import your eritte content</p>
+        </div>
+        <div class="step">
+          <span>2</span>
+          <p>Press "generate" button</p>
+        </div>
+        <div class="step">
+          <span class="after-none">3</span>
+          <p>Download MP3 / WAV</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="benifits">
+      <div class="benifits-cont center">
+        <div class="heading-cont">
+          <h2>Full list of benefits of neural voices</h2>
+        </div>
+        <div class="benifits-lists">
+          <div class="list list-1">
+            <div class="left-list">
+              <h3>Downloadable TTS</h3>
+              <p>
+                You can download converted audio files in MP3, WAV, OGG for
+                free.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/downloadtts.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>Long texts</h3>
+              <p>
+                If your Limit balance is sufficient, you can use a single query
+                to convert a text of up to 2,000,000 characters into speech.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/long_texts.gif" alt="" />
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>Commercial Use</h3>
+              <p>
+                You can use the generated audio for commercial purposes.
+                Examples: YouTube, Tik Tok, Instagram, Facebook, Twitch,
+                Twitter, Podcasts, Video Ads, Advertising, E-book, Presentation
+                and other.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/comercial_use.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list list-2 list-4">
+            <div class="left-list">
+              <h3>Multi-voice editor</h3>
+              <p>
+                Dialogue with AI Voices. You can use several voices at once in
+                one text.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/dialog.jpg" alt="" />
+              <a href="">Try to generate a Dialogue</a>
+            </div>
+          </div>
+          <div class="list list-2 list-5">
+            <div class="left-list">
+              <h3>Custom voice settings</h3>
+              <p>
+                Change Speed, Pitch, Stress, Pronunciation,
+                <a href="">Intonation</a>, <a href="">Emphasis</a>,
+                <a href="">Pauses</a> and more. <a href="">SSML support</a>.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/custom_voice.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>Save Money</h3>
+              <p>
+                You spend little on re-dubbing the text. Limits are spent only
+                for changed sentences in the text.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/savemoney.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="list list-2 list-4">
+            <div class="left-list">
+              <h3>
+                Over 1000 Natural Sounding <br />
+                Voices
+              </h3>
+              <p>
+                Crystal-clear voice over like a Human. Males, females,
+                children's, elderly voices.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/over_1000_voices.png" alt="" />
+              <a href="">Test all voices for free</a>
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>Powerful Support</h3>
+              <p>
+                We will help you with any questions about text-to-speech. Ask
+                any questions, even the simplest ones. We are happy to help.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/powerful_support.gif" alt="" />
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>
+                Compatible with editing <br />
+                programs
+              </h3>
+              <p>
+                Works with any video creation software: Adobe Premier, After
+                effects, Audition, DaVinci Resolve, Apple Motion, Camtasia,
+                iMovie, Audacity, etc.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/compatible.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list list-2">
+            <div class="left-list">
+              <h3>Sharing</h3>
+              <p>
+                You can share the link to the audio. Send audio links to your
+                friends and colleagues.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/sharing.jpg" alt="" />
+            </div>
+          </div>
+          <div class="list list-2 list-last">
+            <div class="left-list">
+              <h3>Cloud save your history</h3>
+              <p>
+                All your files and texts are automatically saved in your profile
+                on our cloud server. Add tracks to your favorites in one click.
+              </p>
+            </div>
+            <div class="right-list">
+              <img src="./assets/coud_save.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="heading-cont-bottom">
+          <h2>
+            Use our text to voice converter to make videos with natural <br />
+            sounding speech!
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="goodbye">
+      <div class="goodbye-cont center">
+        <div class="heading-goodbye">
+          <h3>
+            Say goodbye to expensive <br />
+            traditional audio creation
+          </h3>
+        </div>
+        <div class="para-goodbye">
+          <p>
+            Cheap price. Create a professional voiceover in real time for
+            pennies. it <br />
+            is 100 times cheaper than a live speaker.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-container center flex-align">
+            <div class="left-card">
+              <div class="left-card-heading">
+                <h5>Traditional audio creation</h5>
+              </div>
+              <div class="left-card-img">
+                <img src="./assets//traditional_audio_creation.jpg" alt="" />
+              </div>
+              <div class="bullet-points">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>Expensive live speakers,
+                    <br />
+                    high prices
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>A long search for
+                    freelancers and studios
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>Editing requires complex
+                    tools and knowledge
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>
+                    The announcer in the studio voices a long time. It takes
+                    time to give him a task and accept it..
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-card">
+              <div class="right-card-heading">
+                <h5>SpeechGen</h5>
+              </div>
+              <div class="left-card-img">
+                <img src="./assets/speechgen.jpg" alt="" />
+              </div>
+              <div class="bullet-points">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Affordable tts generation
+                    starting at $0.08 per 1000 characters
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Website accessible in your
+                    browser right now
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Intuitive interface,
+                    suitable for beginners
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    SpeechGen generates text from speech very quickly. A few
+                    clicks and the audio is ready.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases">
+      <div class="use-cases-container center">
+        <div class="create-para">
+          <p>Create AI-generated realistic voice-overs.</p>
+        </div>
+        <div class="heading-use-cases">
+          <h4>Ways to use. Cases.</h4>
+        </div>
+        <div class="para-use-cases">
+          <p>
+            See how other people are already using our realistic speech
+            synthesis. There are <br />
+            hundreds of variations in applications. Here are some of them.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="grid-container application-container">
+            <div class="grid-item application-item item-1">
+              <h5>Voice over for videos</h5>
+              <p>
+                Commercial, YouTube, Tik Tok, Instagram, Facebook, and other
+                social media. Add <br />
+                voice to any videos!
+              </p>
+              <div class="play-icon">
+                <div class="play-icon-container">
+                  <i class="fa-solid fa-play fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item application-item item-2">
+              <h5>E-learning material</h5>
+              <p>
+                Ex: learning foreign languages, listening to lectures,
+                instructional videos.
+              </p>
+            </div>
+            <div class="grid-item application-item item-3">
+              <h5>Advertising.</h5>
+              <p>
+                Increase installations and sales! <br />
+                Create AI-generated realistic <br />
+                voice-overs for video ads, promo, and creatives.
+              </p>
+              <div class="play-icon">
+                <div class="play-icon-container">
+                  <i class="fa-solid fa-play fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item application-item item-4">
+              <h5>Public places.</h5>
+              <p>
+                Synthesizing speech from text is needed for airports, bus
+                stations, parks, supermarkets, stadiums, and other public areas.
+              </p>
+            </div>
+            <div class="grid-item application-item item-5">
+              <h5>Podcasts.</h5>
+              <p>
+                Turn text into podcasts to increase content reach. Publish your
+                audio files on iTunes, Spotify, and other podcast services.
+              </p>
+            </div>
+            <div class="grid-item application-item item-6">
+              <h5>Mobile apps</h5>
+              <p>
+                and desktop software. The synthesized ai voices make the app
+                friendly.
+              </p>
+            </div>
+            <div class="grid-item application-item item-7">
+              <h5>Essay reader.</h5>
+              <p>Read your essay out loud to write a better paper.</p>
+            </div>
+            <div class="grid-item application-item item-8">
+              <h5>Presentations.</h5>
+              <p>
+                Use text-to-speech for impressive PowerPoint presentations and
+                slideshow.
+              </p>
+            </div>
+            <div class="grid-item application-item item-9">
+              <h5>Reading documents.</h5>
+              <p>
+                Save your time reading documents aloud with a speech
+                synthesizer.
+              </p>
+            </div>
+            <div class="grid-item application-item item-10">
+              <h5>Book reader.</h5>
+              <p>
+                Use our text-to-speech web app for ebook reading aloud with
+                natural voices.
+              </p>
+            </div>
+            <div class="grid-item application-item item-11">
+              <h5>Welcome audio</h5>
+              <p>
+                messages for websites. It is a perfect way to re-engage with
+                your audience.
+              </p>
+            </div>
+            <div class="grid-item application-item item-12">
+              <h5>Online article reader.</h5>
+              <p>
+                Internet users translate texts of interesting articles into
+                audio and listen to them to save time.
+              </p>
+            </div>
+            <div class="grid-item application-item item-13">
+              <h5>Voicemail greeting generator.</h5>
+              <p>Record voice-over for telephone systems phone greetings</p>
+            </div>
+            <div class="grid-item application-item item-14">
+              <h5>Online narrator</h5>
+              <p>to read fairy tales aloud to children.</p>
+            </div>
+            <div class="grid-item application-item item-15">
+              <h5>For fun.</h5>
+              <p>
+                Use the robot voiceover to create memes, creativity, and gags.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="para-maximize">
+          <p>
+            Maximize your content’s potential with an audio-version. Increase
+            audience <br />
+            engagement and drive business growth.
+          </p>
+        </div>
+        <div class="heading-maximize">
+          <h2>Who uses Text to Speech?</h2>
+        </div>
+        <div class="para-maximize-2">
+          <p>
+            SpeechGen.io is a service with artificial intelligence used by about
+            1,000 people daily for <br />
+            different purposes. Here are examples.
+          </p>
+        </div>
+        <div class="flex-maximize">
+          <div class="flex-maximize-item">
+            <h4>Video makers</h4>
+            <p>
+              create voiceovers for videos. They generate audio content without
+              expensive studio production.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Newsmakers</h4>
+            <p>
+              convert text to speech with computerized voices for news reporting
+              and sports announcing
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Students</h4>
+            <p>and busy professionals to quickly explore content</p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Foreigners.</h4>
+            <p>
+              Second-language students who want to improve their pronunciation
+              or listen to the text comprehension
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Software developers</h4>
+            <p>
+              add synthesized speech to programs to improve the user experience.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Marketers.</h4>
+            <p>Easy-to-produce audio content for any startups</p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>IVR voice recordings.</h4>
+            <p>Generate prompts for interactive voice response systems</p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Educators.</h4>
+            <p>
+              Foreign language teachers generate voice from the text for audio
+              examples.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Booklovers</h4>
+            <p>
+              use Speechgen as an out loud book reader. The TTS voiceover is
+              downloadable. Listen on any device.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>HR departments</h4>
+            <p>
+              and e-learning professionals can make learning modules and
+              employee training with ai text to speech online software.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Webmasters</h4>
+            <p>
+              convert articles to audio with lifelike robotic voices. TTS audio
+              increases the time on the webpage and the depth of views.
+            </p>
+          </div>
+          <div class="flex-maximize-item">
+            <h4>Animators</h4>
+            <p>use ai voices for dialogue and character speech.</p>
+          </div>
+        </div>
+        <div class="heading-deliver">
+          <p>
+            Text to Speech enables brands, companies, and organizations to
+            deliver enhanced <br />
+            end-user experience, while minimizing costs.
+          </p>
+        </div>
+        <div class="faqs">
+          <div class="heading-faqs">
+            <h4>Frequently Asked Questions</h4>
+          </div>
+          <div class="faq-container">
+            <ul class="faq">
+              <li class="question">
+                Can I use audio for YouTube, Tik-Tok, IGTV, in Video ads or
+                other videos?
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                Yes, you can convert the text of your choices into fancy male or
+                female voices. And It's your choice to use these files for
+                personal uses. You can use it for Youtube background voices.
+              </li>
+            </ul>
+            <ul class="faq">
+              <li class="question">
+                How to insert a pause
+
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                The first way: click on the pause button. The second way: is to
+                specify the pause exact length with the tag . The pause is
+                specified in Ms. 1000 Ms = 1 second, 1500 Ms = 1.5 seconds, etc.
+                more details
+              </li>
+            </ul>
+            <ul class="faq">
+              <li class="question">
+                How to save voiced text to favorites?
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                Click on the favorites icon. All your favorite files are in your
+                profile.
+              </li>
+            </ul>
+            <ul class="faq">
+              <li class="question">
+                Can you download text to speech audio?
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                Yes. Just click the "Download" button after converting text to
+                speech. You can choise mp3 or wav.
+              </li>
+            </ul>
+            <ul class="faq">
+              <li class="question">
+                Can I use the voices for commercial purpose?
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                Yes, you can use our AI voices all for commercial purposes.
+              </li>
+            </ul>
+            <ul class="faq">
+              <li class="question">
+                Can I voice text to speech for free?
+                <div class="down_arrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="answer">
+                Yes, you can test 1000 characters for free. For registration we
+                will give you another 1000 characters to test our voises.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="para-tarriff">
+          <p>
+            Convert any text to super realistic human voices. See all
+            <a href="">tariff plans.</a>
+          </p>
+        </div>
+        <div class="supported-langs">
+          <div class="heading-supported-langs">
+            <h4>Supported Languages</h4>
+          </div>
+          <ul class="supported-langs-container">
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Ethiopia.png"
+                alt=""
+              />&nbsp;Amharic (Ethiopia)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Arab_1.png" alt="" />&nbsp;Arab
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Flag_of_Algeria.png"
+                alt=""
+              />&nbsp;Arabic (Algeria)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Egypt.png" alt="" />&nbsp;Arabic
+              (Egypt)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Arab_1.png" alt="" />&nbsp;Arabic
+              (Saudi Arabia)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Basque.png" alt="" />&nbsp;Basque
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/India.png" alt="" />&nbsp;Bengali
+              (India)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Bulgaria.png"
+                alt=""
+              />&nbsp;Bulgaria
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Catalan.png"
+                alt=""
+              />&nbsp;Catalan (Spain)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/China.png" alt="" />&nbsp;Chinese
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Czech.png" alt="" />&nbsp;Czech
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Danish (Denmark).png"
+                alt=""
+              />&nbsp;Danish
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Dutch (NL).png"
+                alt=""
+              />&nbsp;Dutch NL
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Australia.png"
+                alt=""
+              />&nbsp;English (Australia)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Canada.png"
+                alt=""
+              />&nbsp;English (Canada)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/GB.webp" alt="" />&nbsp;English
+              (GB)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Hong Kong.png"
+                alt=""
+              />&nbsp;English (Hong Kong)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/India.png" alt="" />&nbsp;English
+              (India)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/GB.webp" alt="" />&nbsp;English
+              (Philippines)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Estonia.png"
+                alt=""
+              />&nbsp;Estonian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Finnish.png"
+                alt=""
+              />&nbsp;Finnish
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/France.png" alt="" />&nbsp;French
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags" alt="" />&nbsp;Galician
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/German.png" alt="" />&nbsp;German
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Austria.png"
+                alt=""
+              />&nbsp;German (Austria)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Greek.png" alt="" />&nbsp;Greek
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/India.png"
+                alt=""
+              />&nbsp;Gujarati
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags" alt="" />&nbsp;Hebrew
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/India.png" alt="" />&nbsp;Hindi
+              India
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Iceland.png"
+                alt=""
+              />&nbsp;Icelandic
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Indonesia.png"
+                alt=""
+              />&nbsp;Indonesian
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/Irish.png" alt="" />&nbsp;Irish
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Italian.png"
+                alt=""
+              />&nbsp;Italian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/India.png"
+                alt=""
+              />&nbsp;Javanese
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/India.png" alt="" />&nbsp;Kannada
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Latvian.png"
+                alt=""
+              />&nbsp;Latvian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Norway.png"
+                alt=""
+              />&nbsp;Norwegian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Persian.png"
+                alt=""
+              />&nbsp;Persian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Portugal.png"
+                alt=""
+              />&nbsp;Portugese
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Romania.png"
+                alt=""
+              />&nbsp;Romanian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Russian.png"
+                alt=""
+              />&nbsp;Russian
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Spanish.png"
+                alt=""
+              />&nbsp;Spanish
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Argentina.png"
+                alt=""
+              />&nbsp;Spanish (Argentina)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Spanish (Mexico).png"
+                alt=""
+              />&nbsp;Spanish (Mexico)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/united-states-flag-icon.png"
+                alt=""
+              />&nbsp;Spanish (United States)
+            </li>
+            <li class="lang">
+              <img
+                src="./assets/Country_Flags/Sweden.png"
+                alt=""
+              />&nbsp;Swedish
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags/India.png" alt="" />&nbsp;Tamil
+              (India)
+            </li>
+            <li class="lang">
+              <img src="./assets/Country_Flags" alt="" />&nbsp;All Languages
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-container center">
+        <div class="grid">
+          <ul class="footer-menus">
+            <li class="first-menu">Support</li>
+            <li><span class="envelope"><i class="fa-solid fa-envelope"></i></span><a href="">Contact</a></li>
+            <li>
+              <span class="telegram"><i class="fa-brands fa-telegram"></i></i></span><a href="">Telegram Group</a>
+            </li>
+            <li>
+              <span class="telegram"><i class="fa-brands fa-telegram"></i></i></span><a href="">Telegram Chat</a>
+            </li>
+            <li><span class="github"><i class="fa-brands fa-github"></i></span><a href="">Github</a></li>
+          </ul>
+        </div>
+        <div class="grid">
+          <ul class="footer-menus">
+            <li class="first-menu">FAQ</li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="grid">
+          <ul class="footer-menus">
+            <li class="first-menu">Media</li>
+            <li><span class="youtube"><i class="fa-brands fa-square-youtube"></i></span><a href="">Youtube</a></li>
+            <li><span class="twitter"><i class="fa-brands fa-twitter"></i></span><a href="">Twitter</a></li>
+            <li><span class="facebook"><i class="fa-brands fa-facebook"></i></span><a href="">Facebook</a></li>
+            <li><span class="podcast"><i class="fa-solid fa-podcast"></i></span><a href="">Podcast</a></li>
+          </ul>
+        </div>
+        <div class="grid">
+          <ul class="footer-menus">
+            <li class="first-menu">Site Terms</li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">DMCA</a></li>
+            <!-- <li>Telegram Chat</li>
+            <li>Github</li> -->
+          </ul>
+        </div>
+        <div class="grid">
+          <ul class="footer-menus">
+            <li class="first-menu">Site Settings</li>
+            <li><a href="">Cookie settings</a></li>
+            <li><a href="">Recaptcha privacy</a></li>
+            <li><a href="">Recaptcha terms</a></li>
+            <!-- <li>Github</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="footer-foot">
+        <p>© 2024 <a href="">SpeechGen.io</a> – ai Text to Speech</p>
+      </div>
+    </footer>
+  </body>
+</html>
